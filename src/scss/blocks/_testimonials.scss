@@ -1,0 +1,45 @@
+
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    overflow: hidden;
+}
+.testimonials__col {
+    display: grid;
+    gap: 32px;
+    
+    animation: sildeUp 20s linear infinite;
+
+    &:nth-child(2){
+        padding-top: 100px;
+    }
+}
+
+@keyframes sildeUp {
+    0%{
+        transform: translateY(0%)
+    }
+    95%{
+        transform: translateY(-50%);
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    97%{
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    98%{
+        transform: translateY(0%);
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+}

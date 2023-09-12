@@ -1,0 +1,46 @@
+.discover {
+  padding: 60px 0;
+
+  &__picture {
+    position: relative;
+
+    &-hint {
+      position: absolute;
+      top: 90px;
+      left: 40px;
+      z-index: 10;
+    }
+
+    &-scroll{
+      position: absolute;
+      bottom: 20px;
+      right: 15px;
+    }
+  }
+}
+
+.discover__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.discover__title {
+  margin-bottom: 24px;
+}
+
+.discover__text {
+  margin-bottom: 40px;
+}
+.text {
+  color: var(--text-muted);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 150%;
+
+  p + p {
+    margin-top: 1em;
+  }
+}
