@@ -1,24 +1,31 @@
 .popular {
-    padding: 60px 0;
+  padding: 60px 0;
 
-    &__title{
-        display: grid;
-        gap: 16px;
-    }
+  &__title {
+    display: grid;
+    gap: 16px;
 
-    &__controls{
-        display: flex;
-        gap: 15px;
+    @include mediaMobile {
+      gap: 8px;
     }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+  }
 }
 
 .popular__top {
-    margin-bottom: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include mediaMobileS {
+    flex-direction: column;
+  }
 }
 .popular__content {
 }
-

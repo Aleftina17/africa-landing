@@ -1,20 +1,54 @@
 .discover {
   padding: 60px 0;
 
+  @include mediaMobileXS {
+    padding: 30px 0;
+  }
+
   &__picture {
     position: relative;
+    width: fit-content;
+
+    justify-self: center;
+
+    @include mediaTablet {
+      grid-row: -1 / 1;
+    }
 
     &-hint {
       position: absolute;
       top: 90px;
       left: 40px;
       z-index: 10;
+
+      @include mediaLaptop {
+        top: 40px;
+        left: 20px;
+      }
+
+      @include mediaMobile {
+        top: 30px;
+        left: 0;
+      }
+
+      @include mediaMobileXS {
+        display: none;
+      }
     }
 
-    &-scroll{
+    &-scroll {
       position: absolute;
       bottom: 20px;
       right: 15px;
+
+      @include mediaLaptop {
+        right: 0;
+        bottom: 0;
+      }
+
+      @include mediaMobile {
+        width: 30%;
+      }
     }
   }
 }
@@ -24,6 +58,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 .discover__title {
@@ -32,15 +71,8 @@
 
 .discover__text {
   margin-bottom: 40px;
-}
-.text {
-  color: var(--text-muted);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 150%;
 
-  p + p {
-    margin-top: 1em;
+  @include mediaMobileXS {
+    margin-bottom: 20px;
   }
 }

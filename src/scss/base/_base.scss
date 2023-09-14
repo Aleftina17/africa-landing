@@ -22,37 +22,74 @@ img {
   line-height: normal;
 
   &--decor {
-	position: relative;
+    position: relative;
 
     &::after {
       content: "";
       position: absolute;
-	  left: 0;
-	  bottom: 0;
-	  width: 268px;
-	  height: 24px;
-	  z-index: -1;
-	  background-image: url(./../img/discover/underline.svg);
-	  background-repeat: no-repeat;
+      left: 0;
+      bottom: 0;
+      width: 268px;
+      height: 24px;
+      z-index: -1;
+      background-image: url(./../img/discover/underline.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @include mediaMobile {
+        width: 184px;
+        height: 12px;
+      }
     }
+  }
+
+  @include mediaTablet {
+    font-size: 52px;
+  }
+
+  @include mediaMobile {
+    font-size: 32px;
+  }
+
+  @include mediaMobileXS {
+    font-size: 26px;
   }
 }
 
-.title-3{
-font-size: 36px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+.title-3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @include mediaMobile {
+    font-size: 28px;
+  }
 }
 
-.title-4{
-
+.title-4 {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
 }
 
-.muted{
+.muted {
   color: var(--text-muted);
+}
+
+.text {
+  color: var(--text-muted);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 150%;
+
+  p + p {
+    margin-top: 1em;
+  }
+
+  @include mediaMobile {
+    font-size: 16px;
+  }
 }

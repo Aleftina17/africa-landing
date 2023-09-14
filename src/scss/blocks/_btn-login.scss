@@ -16,7 +16,8 @@
 
   transition: all 0.1s ease-in;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 }

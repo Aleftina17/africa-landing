@@ -1,14 +1,9 @@
-<div class="swiper">
+<div class="swiper" id="swiperPopular">
 
   <div class="swiper-wrapper">
 
-    <div class="swiper-slide">@@include('./../cards/venice.html')</div>
-    <div class="swiper-slide">@@include('./../cards/santorini.html')</div>
-    <div class="swiper-slide">@@include('./../cards/bangkok.html')</div>
-    <div class="swiper-slide">@@include('./../cards/paris.html')</div>
-    <div class="swiper-slide">@@include('./../cards/venice.html')</div>
-    <div class="swiper-slide">@@include('./../cards/santorini.html')</div>
-    <div class="swiper-slide">@@include('./../cards/bangkok.html')</div>
-    <div class="swiper-slide">@@include('./../cards/paris.html')</div>
+    @@loop('./../templates/card-popular.html', './data/popular.json')
+
+
   </div>
 </div>
