@@ -15,17 +15,15 @@
     gap: 15px;
     flex-shrink: 0;
   }
-}
 
-.popular__top {
-  margin-bottom: 32px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  &__top {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 
-  @include mediaMobileS {
-    flex-direction: column;
+    @include mediaMobileS {
+      flex-direction: column;
+    }
   }
-}
-.popular__content {
 }

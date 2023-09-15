@@ -1,43 +1,43 @@
 [
     {
-        "img": "venice.jpg",
-        "title": "Venice, Italy",
+        "img": "kenya.jpg",
+        "title": "Kenya",
         "rating": "4.5",
         "price": "900"
     },
     {
-        "img": "bali.jpg",
-        "title": "Bali, Indonesia",
+        "img": "tanzania.jpg",
+        "title": "Tanzania",
         "rating": "4.5",
         "price": "480"
     },
     {
-        "img": "bangkok.jpg",
-        "title": "Bangkok, Thailand",
+        "img": "kafue.jpg",
+        "title": "Kafue",
         "rating": "4.5",
         "price": "440"
     },
     {
-        "img": "santorini.jpg",
-        "title": "Santorini, Greek",
+        "img": "inhambane.jpg",
+        "title": "Inhambane",
         "rating": "4.5",
         "price": "900"
     },
     {
-        "img": "paris.jpg",
-        "title": "Paris, France",
+        "img": "zambezi.jpg",
+        "title": "Zambezi",
         "rating": "4.5",
         "price": "1100"
     },
     {
-        "img": "new-york.jpg",
-        "title": "New York, USA",
+        "img": "uganda.jpg",
+        "title": "Uganda",
         "rating": "4.5",
-        "price": "1800"
+        "price": "800"
     },
     {
-        "img": "dubai.jpg",
-        "title": "Dubai, UAE",
+        "img": "lower-zambezi.jpg",
+        "title": "Lower Zambezi",
         "rating": "4.5",
         "price": "900"
     }

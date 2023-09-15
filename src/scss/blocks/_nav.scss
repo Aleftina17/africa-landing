@@ -6,42 +6,50 @@
 
   .logo {
     flex-shrink: 0;
-  }
-}
 
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-
-  a {
-    color: #181818;
+    img{
+    width: 150px;
+    height: 40px;
+    }
+    
   }
 
-  a:hover,
-  a.active {
-    color: #35aff4;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  
+    a {
+      color: var(--text-color);
+    }
+  
+    a:hover,
+    a.active {
+      color: var(--accent);
+    }
+  
+    @include mediaTablet {
+      display: none;
+    }
   }
-
-  @include mediaMobile {
+  
+  &__btns {
+    display: flex;
+    gap: 12px;
+  
+    @include mediaTablet {
+      display: none;
+    }
+  }
+  
+  &__icon {
     display: none;
+  
+    @include mediaTablet {
+      display: block;
+    }
   }
 }
 
-.nav__btns {
-  display: flex;
-  gap: 12px;
 
-  @include mediaMobile {
-    display: none;
-  }
-}
-
-.nav__icon {
-  display: none;
-
-  @include mediaMobile {
-    display: block;
-  }
-}

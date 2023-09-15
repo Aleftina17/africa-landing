@@ -9,6 +9,7 @@
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 4px 10px 0px rgba(23, 28, 31, 0.23);
+  color: var(--page-bg);
 
   &__rating {
     display: flex;
@@ -40,11 +41,7 @@
     line-height: 150%;
   }
 
-  &__author-role {
-    color: var(--text-muted);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: 150%;
+  &__author-name {
+    font-weight: 600;
   }
 }

@@ -1,8 +1,4 @@
-@mixin mediaMobile() {
-  @media (max-width: 767px) {
-    @content;
-  }
-}
+
 
 @mixin mediaLaptop() {
   @media (max-width: 1439px) {
@@ -12,6 +8,12 @@
 
 @mixin mediaTablet() {
   @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin mediaMobile() {
+  @media (max-width: 767px) {
     @content;
   }
 }

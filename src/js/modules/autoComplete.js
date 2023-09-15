@@ -4,7 +4,7 @@ import countryList from "./../helpers/countryList";
 function autoCompleteFunc() {
     const autoCompleteJS = new autoComplete({
         selector: "#autoCompleteCountry",
-      placeHolder: "e.g Bali, Indonesia",
+      placeHolder: "e.g Zimbabwe",
       data: {
         src: countryList,
       },

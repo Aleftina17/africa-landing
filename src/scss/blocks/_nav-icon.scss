@@ -8,7 +8,7 @@
   --line-height: 2px;
   --spacing: 8px;
 
-  --color: #000;
+  --color: var(--text-color);
   --radius: 4px;
 
   height: calc(var(--line-height) * 3 + var(--spacing) * 2);

@@ -1,17 +1,20 @@
 .scroll-down {
   position: relative;
+  z-index: 10;
   display: inline-block;
   overflow: hidden;
+
+  &__text {
+    animation: rotation 10s linear 0s infinite running normal;
+  }
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
-.scroll-down__text {
-  animation: rotation 10s linear 0s infinite running normal;
-}
-.scroll-down__icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 @keyframes rotation {
   0% {
